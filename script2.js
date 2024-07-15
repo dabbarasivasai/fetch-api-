@@ -16,13 +16,13 @@ function displayPosts(posts) {
   postsContainer.innerHTML = posts
     .map(
       (post) => `
-        <div class='post'>
-            <h3>${post.title}</h3>
-            <p>${post.body}</p>
-        </div>
-
-
-        `
+          <div class='post'>
+              <h3>${post.title}</h3>
+              <p>${post.body}</p>
+          </div>
+  
+  
+          `
     )
     .join("");
 }
@@ -47,13 +47,13 @@ function displayPosts(posts) {
   postsContainer.innerHTML = posts
     .map(
       (post) => `
-        <div class='post'>
-           <input type="checkbox" ${post.completed ? "checked" : ""}>
-           <label>${post.title}</label>
-        </div>
-
-
-        `
+          <div class='post'>
+             <input type="checkbox" ${post.completed ? "checked" : ""}>
+             <label>${post.title}</label>
+          </div>
+  
+  
+          `
     )
     .join("");
 }
